@@ -4,6 +4,8 @@
 import java.util.ArrayList;
 import java.util.List;
 
+@SuppressWarnings({"unchecked"})
+
 public class Author extends Person {
     private List books;
 
@@ -19,17 +21,14 @@ public class Author extends Person {
     public List<String> getBooks() {
         return books;
     }
-    @SuppressWarnings("uncheched")
     public List<String> publishedBooks() {
         return books;
     }
 
-    @SuppressWarnings("uncheched")
     public void addBook(String book) {
         books.add(book);
     }
 
-    @SuppressWarnings("uncheched")
     public String sortName() {
         return String.format("%s, %s", lastName, firstName);
     }
