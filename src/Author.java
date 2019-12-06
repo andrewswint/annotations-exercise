@@ -12,6 +12,7 @@ public class Author extends Person {
         books = new ArrayList<>();
     }
 
+    @Deprecated
     public List<String> getBooks() {
         return books;
     }
@@ -23,7 +24,8 @@ public class Author extends Person {
         books.add(book);
     }
 
-    public String sortName() {
+    @Override
+    public String fullName() {
         return String.format("%s, %s", lastName, firstName);
     }
 }
